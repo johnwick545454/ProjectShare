@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+public class PersonStream {
+
+	public static void main(String[] args) {
+		List<Person> alist = new ArrayList<>();
+		alist.add(new Person("Abhishek", 25));
+		alist.add(new Person("Vipin", 24));
+		Stream<Person> spr = alist.stream();
+		spr.forEach(System.out::println);
+
+	}
+
+}
